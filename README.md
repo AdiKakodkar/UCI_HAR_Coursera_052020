@@ -1,6 +1,6 @@
 #Human Activity Recognition Using Smartphones Dataset: Tidy Data Exercise
 Version 1.0
-==================================================================
+
 Aditya Kakodkar
 kakodkar.aditya[at]gmail.com
 
@@ -10,13 +10,13 @@ The dataset contained two parts i.e. the test and the train dataset. The test da
 During this exercise to tidy up and summerize the data both the test and train datasets were combined. Main focus of the exercise was on the measurement means and standard deviations. Hence, only these variables were selected to create a smaller dataset. Activities performed by subjects for each measurement were added to the smaller dataset. Further an even smaller tidy dataset was created with averages of variables for each subject and each activity. Detailed information about the exercise can be obtained from the attached codebook.
 
 ##For each record it is provided:
-======================================
+
 
 - Subject identifier whith activity which was performed for that measurement.
 - 66 variables containing averages of the measurements for the given activity for the given subject
 
 ##The dataset includes the following files:
-=========================================
+
 
 - 'README.txt'
 
@@ -26,7 +26,7 @@ During this exercise to tidy up and summerize the data both the test and train d
 
 
 ##License:
-========
+
 This dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
 
 Aditya Kakodkar 2020
