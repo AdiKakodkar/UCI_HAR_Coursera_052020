@@ -64,7 +64,6 @@ smaller_dataset <- cbind(mean_sd_select, activity_set)
 #cleanUp the  column names
 names(smaller_dataset) <- gsub( x = names(smaller_dataset), pattern = "-mean\\()", replacement = "Mean")                
 names(smaller_dataset) <- gsub( x = names(smaller_dataset), pattern = "-std\\()", replacement = "StdDeviation")
-names(smaller_dataset) <- gsub( x = names(smaller_dataset), pattern = "z", replacement = "Mean")
 names(smaller_dataset) <- gsub( x = names(smaller_dataset), pattern = "Acc", replacement = "Acceleration")
 names(smaller_dataset) <- gsub( x = names(smaller_dataset), pattern = "Gyro", replacement = "Orientation")
 names(smaller_dataset) <- gsub( x = names(smaller_dataset), pattern = "Mag", replacement = "Magnitude")
