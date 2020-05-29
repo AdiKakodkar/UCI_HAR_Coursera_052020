@@ -1,11 +1,13 @@
-#Code Book for Human Activity Recognition Using Smartphones Dataset: Tidy Data Exercise (Version 1.0)
+Code Book for Human Activity Recognition Using Smartphones Dataset: Tidy Data Exercise (Version 1.0)
+====================================================================================================
 
-
-##Introduction
+Introduction
+============
 
 Data for this experiment was obtained from readings of accelerometer and gyroscope of a smartphone. More information about the exact protocols for measuring raw data can be found in the 'features_info.txt' file provided along with the raw data.
 
-##Variables
+Variables
+=========
 
 There were 561 variables in the original dataset. These were reduced by choosing only the mean and the standard deviation variables. This subsetting resulted in 66 variables. There were two variables (columns) added to the dataset i.e. Subjects and Activity. Both Subjects and Activity variables were obtained from separate datasets. 
 
@@ -93,9 +95,10 @@ Following is a list of the variables in the final dataset and their type in brac
 [68] "fBodyBodyOrientationJerkMagnitudeStdDeviation" (num)
 
 
-##Summary Choice
+Summary Choice
+==============
 
-The original data was matched with the subjects who participated in the study and the acitvities performed by them. The original dataset contained 10299 activity measurements from 30 subjcts. To simplify the data it was decided to select only the variables which measure the mean and the standard deviation. These were further grouped by activities and  each subject and only the average of each variable was included per row in the final tidy dataset. Each row in the final dataset represents a activity related average measurements of a subject. e.g. as follows
+The original data was matched with the subjects who participated in the study and the acitvities performed by them. The original dataset contained 10299 activity measurements from 30 subjects. To simplify the data it was decided to select only the variables which measure the mean and the standard deviation. These were further grouped by activities and  each subject and only the average of each variable was included per row in the final tidy dataset. Each row in the final dataset represents a activity related average measurements of a subject. e.g. as follows
                 
                         Subject         Activity        Var1       Var2         Var3        Var....
                           1             WALKING         1.234545    -0.234521   -0.444588   
@@ -103,7 +106,8 @@ The original data was matched with the subjects who participated in the study an
 The final dataset contains 180 measurements i.e. 30 subjects performing 6 activities each and 68 variables. 
 
 
-##Study Design
+Study Design
+============
 
 The data was obtained from UCI machine learning repository. It was mainly divided into divided into two parts first was test set which contained about 30% of the subjects and the second one was the train set which contained 70% of the subjects.
  Following steps were applied to the raw data to create the tidy dataset
