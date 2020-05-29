@@ -1,5 +1,6 @@
 # Human Activity Recognition Using Smartphones Dataset: Tidy Data Exercise (Version 1.0)
-# Author: Adi Kakodakar ( copyright,2020)
+# Author: Aditya Kakodakar ( copyright,2020)
+# Output file: tidyDataFile.txt
 # Note: Please make sure that the UCI HAR Dataset (complete unzipped version) is in your working directory before running this script
 
 #required libraries
