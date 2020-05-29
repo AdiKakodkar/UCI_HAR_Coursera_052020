@@ -1,12 +1,11 @@
-==================================================================
-Code Book for Human Activity Recognition Using Smartphones Dataset: Tidy Data Exercise (Version 1.0)
+##Code Book for Human Activity Recognition Using Smartphones Dataset: Tidy Data Exercise (Version 1.0)
 ==================================================================
 
-**Introduction**
+###Introduction
 ================
 Data for this experiment was obtained from readings of accelerometer and gyroscope of a smartphone. More information about the exact protocols for measuring raw data can be found in the 'features_info.txt' file provided along with the raw data.
 
-**Variables**
+###Variables
 =============
 There were 561 variables in the original dataset. These were reduced by choosing only the mean and the standard deviation variables. This subsetting resulted in 66 variables. There were two variables (columns) added to the dataset i.e. Subjects and Activity. Both Subjects and Activity variables were obtained from separate datasets. 
 
@@ -94,7 +93,7 @@ Following is a list of the variables in the final dataset and their type in brac
 [68] "fBodyBodyOrientationJerkMagnitudeStdDeviation" (num)
 
 
-**Summary Choice**
+###Summary Choice
 ==================
 The original data was matched with the subjects who participated in the study and the acitvities performed by them. The original dataset contained 10299 activity measurements from 30 subjcts. To simplify the data it was decided to select only the variables which measure the mean and the standard deviation. These were further grouped by activities and  each subject and only the average of each variable was included per row in the final tidy dataset. Each row in the final dataset represents a activity related average measurements of a subject. e.g. as follows
                 
@@ -104,13 +103,13 @@ The original data was matched with the subjects who participated in the study an
 The final dataset contains 180 measurements i.e. 30 subjects performing 6 activities each and 68 variables. 
 
 
-**Study Design**
+###Study Design
 ================
 The data was obtained from UCI machine learning repository. It was mainly divided into divided into two parts first was test set which contained about 30% of the subjects and the second one was the train set which contained 70% of the subjects.
  Following steps were applied to the raw data to create the tidy dataset
- 1.     Train and test sets were combined in to one dataset. This dataset contained 10299 measurements and 561 variables
- 2.     A subset of the combined dataset was created using the measurements for mean and standard deviation. This reduced the number of variables to 66
- 3.     Activities data was obtained for both test and train sets and combined in to a separate dataset. The acitvities were further labelled according to the key provided. This was then added to the dataset created in step above.
- 4.     Variables in the dataset were labelled to make them more human readable. Complete list of changes to the variable names are listed in the 'Variables' section above.
- 5.     A separate tidy dataset was created from the resulting set in step-4  with averages of each variable for each subject and for each activity. Please refer to the section 'Summary Choice' above for more details.
+*     Train and test sets were combined in to one dataset. This dataset contained 10299 measurements and 561 variables
+*     A subset of the combined dataset was created using the measurements for mean and standard deviation. This reduced the number of variables to 66
+*     Activities data was obtained for both test and train sets and combined in to a separate dataset. The acitvities were further labelled according to the key provided. This was then added to the dataset created in step above.
+*     Variables in the dataset were labelled to make them more human readable. Complete list of changes to the variable names are listed in the 'Variables' section above.
+*     A separate tidy dataset was created from the resulting set in step-4  with averages of each variable for each subject and for each activity. Please refer to the section 'Summary Choice' above for more details.
  
