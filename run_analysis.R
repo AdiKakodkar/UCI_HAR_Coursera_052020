@@ -7,12 +7,12 @@
 library(dplyr)
 library(data.table)
 
-#get text file
+#get text files
 test_set <- read.table( file = "getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/test/X_test.txt", header = FALSE, sep = "", dec = ".")
 train_set <- read.table( file = "getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/train/X_train.txt", header = FALSE, sep = "", dec = ".")
 
 #get feature file
-df_names_X_test <- read.table("c3AssignmentData/UCIHARDataset/features.txt", sep = "")
+df_names_X_test <- read.table("getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/features.txt", sep = "")
 
 #convert feature file to character vector
 X_colNames <- as.vector(df_names_X_test$V2)
